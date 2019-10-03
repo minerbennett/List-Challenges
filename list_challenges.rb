@@ -72,18 +72,40 @@
 #        if str[i] = "c" && str[i+1] == "o" && str[i+1] != nil && str[i+3] == "e" && str[i+3] != nil
  #           count = count + 1
   #      end
+   #     i = i + 1
    # end 
     #return count
 #end
 
 #puts count_code("codecopecodecope")
 
-def middle_way(list, list2)
-   slice = list[(list.size/2)]
-   slice2 = list2[(list2.size/2)]
-   nlist = []
-   nlist = nlist.push(slice)
-   nlist = nlist.push(slice2)
-end
+#def middle_way(list, list2)
+#   slice = list[(list.size/2)]
+#   slice2 = list2[(list2.size/2)]
+#   nlist = []
+#   nlist = nlist.push(slice)
+ #  nlist = nlist.push(slice2)
+#end
 
-puts middle_way([1,2,3,4,5], [2,3,4,5,6])
+#puts middle_way([1,2,3,4,5], [2,3,4,5,6])
+
+#def either_2_4(list)
+ #   rr = 0
+  #  list.each do |i|
+   #     if list[i] == list[i+1]
+    #        rr = 0
+     #       if list[i+3] == list[i+4]
+      #          rr = 1
+       #     end
+        #end
+        #puts "#{rr}"
+    #end
+    #if rr == 1
+    #    return true
+    #else
+    #    return false
+    #end
+#end
+
+#puts either_2_4([1,2,2,3,4])
+
