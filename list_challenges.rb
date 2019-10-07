@@ -93,39 +93,46 @@ def either_2_4(list)
    rr = 0
    list.each do |i|
        if list[i] == list[i+1]
-           rr = 0
-           if list[i+3] == list[i+4]
-               rr = 1
-           end
+           rr = 1
         end
-        puts "#{rr}"
+        if rr == 1
+            return true
+        end
     end
-    if rr == 1
-       return true
-    else
-       return false
-    end
+    return false
 end
 
 #puts either_2_4([1,2,2,3,4])
 
 def max_span(list)
     i = 0
+    max = 0
     list.size.times do
-        
+        k = i
+        ((list.size-1)-i).times do
+            if list[i] == list[k] && k-i>max
+                max = k-i
+            end
+        k = k + 1
+        end
+        i = i + 1
+    end
+    return max
+end
+
+puts max_span([1,1])
+
+def g_happy(string)
+    list.each do |n|
+        if list
+        end
     end
 end
 
-puts max_span([1,2,3,4,4,3,2,1])
-
-def g_happy(string)
-
-end
-
-puts g_happy(["ggtetwetggtwyryergg"])
+#puts g_happy(["ggtetwetggtwyryergg"])
 
 def merge(list, list2)
 
 end
 
-puts merge([1,2,8], [4,9,10])
+#puts merge([1,2,8], [4,9,10])
